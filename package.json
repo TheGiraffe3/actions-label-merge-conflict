@@ -14,7 +14,7 @@
 		"@types/node": "^22.0.0",
 		"@vercel/ncc": "0.38.3",
 		"prettier": "3.2.5",
-		"typescript": "5.5.3"
+		"typescript": "5.8.3"
 	},
 	"prettier": {
 		"useTabs": true
