@@ -38,8 +38,8 @@ jobs:
         with:
           # pull_requests don't have access to secrets
           continueOnMissingPermissions: "${{ github.event.action == 'synchronize' }}"
-          dirtyLabel: "PR: needs rebase"
-          removeOnDirtyLabel: "PR: ready to ship"
+          dirtyLabel: "has conflicts"
+          removeOnDirtyLabel: "bug"
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           commentOnDirty: "This pull request has conflicts, please resolve those before we can evaluate the pull request."
           commentOnClean: "Conflicts have been resolved. A maintainer will review the pull request shortly."
@@ -51,8 +51,8 @@ jobs:
         with:
           # pull_requests don't have access to secrets
           continueOnMissingPermissions: "${{ github.event.action == 'synchronize' }}"
-          dirtyLabel: "PR: needs rebase"
-          removeOnDirtyLabel: "PR: ready to ship"
+          dirtyLabel: "has conflicts"
+          removeOnDirtyLabel: "bug"
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           commentOnDirty: "This pull request has conflicts, please resolve those before we can evaluate the pull request."
           commentOnClean: "Conflicts have been resolved. A maintainer will review the pull request shortly."
