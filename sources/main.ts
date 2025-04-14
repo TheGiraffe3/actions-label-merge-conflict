@@ -47,7 +47,7 @@ async function main() {
 }
 
 const continueOnMissingPermissions = () =>
-	core.getInput("continueOnMissingPermissions") === "true" || true;
+	core.getInput("continueOnMissingPermissions") === "true" || false;
 
 interface CheckDirtyContext {
 	after: string | null;
